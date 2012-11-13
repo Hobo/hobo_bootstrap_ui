@@ -1,0 +1,6 @@
+<!-- implements `<search-results-container>` for hobo-rapid with `<modal>` -->
+<def tag="search-results-container" attrs="title">
+  <modal title="&title" param="default" autoOpen="&true" data-show="1">
+    <search-results/>
+  </modal>
+</def>
