@@ -10,19 +10,9 @@ The idea for a different repository comes from this discussion: https://groups.g
 of jQuery-UI, but Hobo requires a name-one, dialog and datepicker tag. If these three are implemented, jquery-ui then becomes optional (datepicker is theoretically optional, but the standard Rails one is not very nice).
 
 
-## How to use
+## Installation
 
-Add the gem to your Gemfile:
-
-    gem "hobo_bootstrap_ui", :git => "git://github.com/Hobo/hobo_bootstrap_ui.git"
-
-Run bundle
-
-    bundle
-
-Include the taglibs in front_site.dryml:
-
-    <include gem='hobo_bootstrap_ui'/>
+    rails generate hobo:install_plugin hobo_bootstrap_ui git://github.com/Hobo/hobo_bootstrap_ui.git
 
 ## Documentation
 
