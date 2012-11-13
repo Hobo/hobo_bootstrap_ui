@@ -1,7 +1,26 @@
 hobo_bootstrap_ui
 =================
 
-Additional UI tags for the hobo_bootstrap theme
+Additional UI tags for the `hobo_bootstrap` theme (https://github.com/Hobo/hobo_bootstrap)
+
+
+
+How to use
+==========
+
+Add the gem to your Gemfile:
+
+    gem "hobo_bootstrap_ui", :git => "git://github.com/Hobo/hobo_bootstrap_ui.git"
+
+Run bundle
+
+    bundle
+
+Include the taglibs in front_site.dryml:
+
+    <include gem='hobo_bootstrap_ui'/>
+
+
 
 
 
