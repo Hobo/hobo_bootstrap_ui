@@ -55,4 +55,4 @@ Now you can easily use a Bootstrap modal
 
 
 
-  [1]: https://github.com/Hobo/hobo_bootstrap/raw/master/screenshots/select_one_or_new.png
+  [1]: https://github.com/Hobo/hobo_bootstrap_ui/raw/master/screenshots/select_one_or_new.png
