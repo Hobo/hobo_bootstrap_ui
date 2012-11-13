@@ -3,6 +3,11 @@ hobo_bootstrap_ui
 
 Additional UI tags for the `hobo_bootstrap` theme (https://github.com/Hobo/hobo_bootstrap)
 
+The idea for a different repository comes from this discussion: https://groups.google.com/forum/?fromgroups=#!topic/hobousers/MPvNX8WzQIU . Conclusions:
+* `hobo_bootstrap`: tags that complement jQuery-UI.
+* `hobo_bootstrap_ui`: tags that replace jQuery-UI. We do not need to reimplement all
+of jQuery-UI, but Hobo requires a name-one, dialog and datepicker tag. If these three are implemented, jquery-ui then becomes optional (datepicker is theoretically optional, but the standard Rails one is not very nice).
+
 
 
 How to use
