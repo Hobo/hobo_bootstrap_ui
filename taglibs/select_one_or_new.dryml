@@ -12,9 +12,15 @@ For example, if I want to create a new project in stories/new.dryml:
 
 You also need to modify the create action of the new record. projects_controller.rb:
 
-    def create
-      hobo_create {@this = Story.new(:project => @project) if request.xhr?}
+  def create
+    hobo_create do
+      if request.xhr?
+        @this = Story.new(:project => @project) 
+      else
+        create_response
+      end
     end
+  end
 
 -->
 <def tag="select-one-or-new">
