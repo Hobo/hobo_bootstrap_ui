@@ -2,19 +2,19 @@
 
 Example: I want to create a new project in stories/new.dryml:
 
-  <new-page>
-    <form:>
-      <field-list:>
-        <project-view:><select-one-or-new/></project-view:>
-      </field-list:>
-    </form:>
-  </new-page>
+    <new-page>
+      <form:>
+        <field-list:>
+          <project-view:><select-one-or-new/></project-view:>
+        </field-list:>
+      </form:>
+    </new-page>
 
 You also need to modify the create action of the new record. projects_controller.rb:
 
-  def create
-    hobo_create {@this = Story.new(:project => @project) if request.xhr?}
-  end
+    def create
+      hobo_create {@this = Story.new(:project => @project) if request.xhr?}
+    end
 
 -->
 <def tag="select-one-or-new">
