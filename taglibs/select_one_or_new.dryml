@@ -1,6 +1,6 @@
 <!-- Adds a small button to a select in order to create a new record within a modal
 
-Example: I want to create a new project in stories/new.dryml:
+For example, if I want to create a new project in stories/new.dryml:
 
     <new-page>
       <form:>
