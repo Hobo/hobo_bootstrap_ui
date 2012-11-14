@@ -17,7 +17,6 @@ You also need to modify the create action of the new record. projects_controller
   end
 
 -->
-
 <def tag="select-one-or-new">
   <!-- Partial -->
   <div part="select-one-or-new" id="select-one-or-new-#{this_field}" class="pull-left">      
