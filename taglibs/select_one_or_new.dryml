@@ -12,22 +12,36 @@ For example, if I want to create a new project in stories/new.dryml:
 
 You also need to modify the create action of the new record. projects_controller.rb:
 
-  def create
-    hobo_create do
-      if request.xhr?
-        @this = Story.new(:project => @project) 
-      else
-        create_response
+    def create
+      hobo_create do
+        if request.xhr?
+          @this = Story.new(:project => @project) 
+        else
+          create_response
+        end
       end
     end
-  end
+
+If you are instead in stories/edit.dryml, you need to make sure the new project is autoselected. Add a couple of lines to the previous code:
+
+    def create
+      hobo_create do
+        if request.xhr?
+          @this = Story.new(:project => @project)
+          ajax_update_response(params[:render].values, {}, {:postamble => 
+            "$('#select-one-or-new-Project').val(#{@project.id});"})
+        else
+          create_response
+        end
+      end
+    end
 
 -->
 <def tag="select-one-or-new">
   <%# Partial %>
   <div part="select-one-or-new" id="select-one-or-new-#{this_field}" class="pull-left">
     <div class="input-append">
-      <select-one/>
+      <select-one id="select-one-or-new-#{this_type}"/>
       <%# Button that triggers the modal %>
       <modal-open-button style="margin-top:-5px;" modal="myModal-#{this_field}">+</modal-open-button>
     </div>
