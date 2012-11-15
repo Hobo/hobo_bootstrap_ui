@@ -1,5 +1,7 @@
 Additional UI tags for the [hobo_bootstrap theme](https://github.com/Hobo/hobo_bootstrap).  Some of these tags are wrappers for the [bootstrap javascript components](twitter.github.com/bootstrap/javascript.html).  Others are useful tags that are built on top of those javascript components.
 
+This plugin also includes an implementation of `<search-results-container>`, replacing the one in `hobo_jquery_ui`.
+
 ## Installation
 
     rails generate hobo:install_plugin hobo_bootstrap_ui git://github.com/Hobo/hobo_bootstrap_ui.git
