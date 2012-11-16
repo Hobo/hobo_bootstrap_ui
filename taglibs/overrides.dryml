@@ -4,3 +4,8 @@
     <search-results/>
   </modal>
 </def>
+
+<!-- alias `<name-one>` to `<name-one-bootstrap>` -->
+<def tag="name-one">
+  <name-one-bootstrap merge/>
+</def>
