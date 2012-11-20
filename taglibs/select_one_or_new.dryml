@@ -14,11 +14,8 @@ You also need to modify the create action of the new record. projects_controller
 
     def create
       hobo_create do
-        if request.xhr?
-          @this = Story.new(:project => @project) 
-        else
-          create_response
-        end
+        @this = Story.new(:project => @project)  if request.xhr?
+        create_response
       end
     end
 
