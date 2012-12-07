@@ -1,3 +1,9 @@
+# Sub dependencies written in the gemspec are not loaded by default:
+#   http://stackoverflow.com/questions/6960078
+# We need to require them here, so we can load the JS from bootstrap
+
+require 'bootstrap-datepicker-rails'
+
 module HoboBootstrapUi
 
   VERSION = File.read(File.expand_path('../../VERSION', __FILE__)).strip
