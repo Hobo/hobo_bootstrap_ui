@@ -45,6 +45,7 @@ If you do not specify the format, it will attempt to convert I18n.t(:"date.forma
     data-date-format="#{options['format']}"
     data-date-weekstart="#{options['weekstart']}" 
     data-date-autoclose="#{options['autoclose']}" 
-    data-date-language="#{options['language']}" 
+    data-date-language="#{options['language']}"
+    merge-attrs
   />
 </def>
