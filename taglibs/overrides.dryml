@@ -10,10 +10,10 @@
   <name-one-bootstrap merge/>
 </def>
 
-<!-- use bootstrap-datepicker for date inputs. To switch back to vanilla Rails (`<select-date>`) add to your application.dryml:
+<!-- use bootstrap-datepicker for date inputs. To switch back to vanilla Rails (`<datepicker-rails>`) add to your application.dryml:
 
     <def tag="input" for="Date">
-      <date-select merge/>
+      <datepicker-rails merge/>
     </def>
 -->
 <def tag="input" for="Date">
