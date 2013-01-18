@@ -8,6 +8,13 @@ You can config some options. For example, to change the date format, language an
     </def>
 
 If you do not specify the format, it will attempt to convert I18n.t(:"date.formats.default") from strftime format into the format that the Bootstrap Datepicker likes. Take into account that it's not exactly the same as jquery_ui: year "2000" is represented by "yyyy" instead of "yy".
+
+Another alternative to do the same is "extend. It's useful when you want to use "bootstrap-datepicker" directly in a form:
+
+    <extend tag="bootstrap-datepicker">
+      <old-bootstrap-datepicker dateFormat="dd-mm-yyyy" language="es" weekstart="1" merge/>
+    </extend>
+    
 -->
 
 <def tag="bootstrap-datepicker" attrs="name, value">
@@ -36,8 +43,8 @@ If you do not specify the format, it will attempt to convert I18n.t(:"date.forma
      d
     end
     
-    if this && value.nil?
-      value = I18n.t(this)
+    if this && value.nil? && this.class == Date
+      value = I18n.l(this)
     end
 
   %>
