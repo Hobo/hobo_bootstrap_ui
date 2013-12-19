@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary = 'Additional UI tags for the hobo_bootstrap theme'
   s.description = 'Additional UI tags for the hobo_bootstrap theme'
 
-  s.add_runtime_dependency('hobo_bootstrap', "~> 2.0.0.pre1")
+  s.add_runtime_dependency('hobo_bootstrap', ">= 2.0")
   s.add_runtime_dependency('bootstrap-datepicker-rails')
 
   s.files = `git ls-files -x #{name}/* -z`.split("\0")
