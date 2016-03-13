@@ -1,3 +1,5 @@
 $(function() {
-  $('.bootstrap-datepicker').datepicker({ language: document.documentElement.lang });
+  $('body').on('focus',".bootstrap-datepicker", function(){
+    $(this).datepicker({ language: document.documentElement.lang });
+  });
 });
